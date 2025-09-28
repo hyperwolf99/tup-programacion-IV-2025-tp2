@@ -1,0 +1,26 @@
+### GET /rectangulos
+GET http://localhost:3000/rectangulos
+
+### GET /rectangulos/:id
+GET http://localhost:3000/rectangulos/1
+
+### POST /rectangulos
+POST http://localhost:3000/rectangulos
+Content-Type: application/json
+
+{
+    "base": 3,
+    "altura": 5
+}
+
+### DELETE /rectangulos/:id
+DELETE http://localhost:3000/rectangulos/6
+
+### PUT /rectangulos/:id
+PUT http://localhost:3000/rectangulos/7
+Content-Type: application/json
+
+{
+    "base": 0,
+    "altura": 0
+}
