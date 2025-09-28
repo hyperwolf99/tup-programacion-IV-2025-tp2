@@ -1,0 +1,59 @@
+### Todas las tareas
+GET http://localhost:3000/tareas
+
+### Tarea por id
+GET http://localhost:3000/tareas/4
+
+### Tareas completadas
+GET http://localhost:3000/tareas?completada=true
+
+### Tareas no completadas
+GET http://localhost:3000/tareas?completada=false
+
+### Crear una nueva tarea
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{
+    "nombre": "Cualquier cosa2",
+    "completada": false
+}
+
+### Crear una nueva tarea
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{
+    "nombre": "Lavar el auto",
+    "completada": true
+}
+
+### Crear una nueva tarea
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{
+    "nombre": "Cualquier cosa5",
+    "completada": 1
+}
+
+### Crear una nueva tarea
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{
+    "nombre": "Cualquier cosa6",
+    "completada": 0
+}
+
+### Eliminar una tarea por ID
+DELETE http://localhost:3000/tareas/10
+
+### Actualizar una tarea por ID
+PUT http://localhost:3000/tareas/12
+Content-Type: application/json
+
+{
+    "nombre": "",
+    "completada": 0
+}
