@@ -1,0 +1,56 @@
+### Todos los alumnos
+GET http://localhost:3000/alumnos
+
+### Alumno por id
+GET http://localhost:3000/alumnos/5
+
+### Crear un nuevo alumno
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Juan Perez",
+    "nota1": 7,
+    "nota2": 8,
+    "nota3": 9,
+    "id_materia": 3
+}
+
+### Crear un nuevo alumno
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Carlos Gomez",
+    "nota1": 6,
+    "nota2": 6,
+    "nota3": 5,
+    "id_materia": 4
+}
+
+### Crear un nuevo alumno
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Luis Martinez",
+    "nota1": 7,
+    "nota2": 9,
+    "nota3": 10,
+    "id_materia": 4
+}
+
+### Eliminar un alumno por ID
+DELETE http://localhost:3000/alumnos/10
+
+### Actualizar un alumno por ID
+PUT http://localhost:3000/alumnos/7
+Content-Type: application/json
+
+{
+    "nombre": "Juancito Perez",
+    "nota1": 8,
+    "nota2": 9,
+    "nota3": 10,
+    "id_materia": 3
+}
